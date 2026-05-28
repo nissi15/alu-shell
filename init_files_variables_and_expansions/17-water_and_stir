@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "print(format(int(__import__('os').environ['WATER'].translate(str.maketrans('water','01234')),5)+int(__import__('os').environ['STIR'].translate(str.maketrans('stir','0123')),4),'o').translate(str.maketrans('01234567','bestchol')))"
+printf "%o\n" $((5#$(echo $WATER|tr -dc water|tr water 01234)+4#$(echo $STIR|tr -dc stir|tr stir 0123)))|tr 01234567 bestchol
