@@ -1,4 +1,6 @@
 #!/bin/usr/env bash
+# This script prints "Best School" 10 times using a while loop, but with special messages for 4 and 8
+
 i=1
 while [ $i -le 10 ]
 do
@@ -9,6 +11,6 @@ do
     else
         echo "Best School"
     fi
-    
+
     i=$((i+1))
 done    
