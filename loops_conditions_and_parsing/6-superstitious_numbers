@@ -1,4 +1,4 @@
-#!/bin/usr/env bash
+#!/bin/usr/bin/env bash
 # This script prints numbers from 1 to 20 and says "bad luck" 
 i=1
 while [ $i -le 20 ]
