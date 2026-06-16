@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This script prints the second field of the file names in the current directory, using "-" as a delimiter
+# Reads /etc/passwd and prints username, user id and home directory (uses while)
 
-while read line
+while read line || [ -n "$line" ]
 do
     echo "$line" | cut -d ":" -f1,3,6
 done < /etc/passwd
-

@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This script prints the second field of the file names in the current directory, using "-" as a delimiter
+# Lists the current directory, showing only the part of each name after the first dash
 
 for file in *
-do 
-    echo "file" | cut -d "-" -f2-
+do
+    echo "$file" | cut -d "-" -f2-
 done
-    
