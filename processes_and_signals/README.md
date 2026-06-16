@@ -1,0 +1,1 @@
+In this directory, I create all processes and also use trap to capture signals
