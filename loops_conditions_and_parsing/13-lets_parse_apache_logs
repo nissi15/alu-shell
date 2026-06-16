@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script reads the apache-access.log file and prints the first and ninth fields, using space as a delimiter
+
+awk '{print $1, $9}' apache-access.log

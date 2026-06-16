@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script prints the second field of the file names in the current directory, using "-" as a delimiter
+
+while read line
+do
+    echo "$line" | cut -d ":" -f1,3,6
+done < /etc/passwd
+

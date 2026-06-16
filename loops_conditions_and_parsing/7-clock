@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script prints the hours and minutes of a clock using nested while loops
+
+h=0
+while [ $h -le 12]
+do 
+    m=1
+    echo "Hour: $h"
+    while [ $m -le 59 ]
+    do
+        echo "$m"
+        m=$((m + 1))
+    done
+    h=$((h + 1))
+done
+
+

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script reads the apache-access.log file, prints the first and ninth fields, counts the unique occurrences of each combination, and sorts them in reverse numerical order
+
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -rn
